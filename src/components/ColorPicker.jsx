@@ -1,9 +1,5 @@
 
-
 const ColorPicker = ({ selectedPart, bodyColor, detailsColor, glassColor, handleColorChange }) => {
-    /*const predefinedColors = [
-        '#00AEEF', '#FF4500', '#FFD700', '#32CD32', '#9400D3', '#000000', '#FFFFFF',
-    ];*/ // Predefined colors
 
     const bodyColors = ['#ff0000','#020202','#FCCA2C', '#7C8D9F', '#32CD32', '#8A2BE2', '#8C8F96' ]; // Example body colors
     const detailColors = ['#6A1A1C', '#A02020', '#FEDD14', '#1E3764']; // Only 3 colors for details

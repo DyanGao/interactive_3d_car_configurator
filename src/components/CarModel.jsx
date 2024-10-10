@@ -8,6 +8,11 @@ const CarModel = ({bodyColor, detailsColor, glassColor}) => {
     //console.log(scene.children[0])
     const carRef = useRef()
 
+
+    scene.position.set(0,0,0)
+
+    scene.scale.set(1.2, 1.2, 1.2);
+
     useEffect(() => {
         if (scene) {
             scene.traverse((child) => {
@@ -58,7 +63,7 @@ const CarModel = ({bodyColor, detailsColor, glassColor}) => {
     });*/
 
     /*Animate the Wheels*/
-    /*const wheels = [nodes['wheel_fl'], nodes['wheel_fr'], nodes['wheel_rl'], nodes['wheel_rr']];
+   /* const wheels = [nodes['wheel_fl'], nodes['wheel_fr'], nodes['wheel_rl'], nodes['wheel_rr']];
 
     useFrame((state, delta) => {
         wheels.forEach((wheel) => (
@@ -67,7 +72,7 @@ const CarModel = ({bodyColor, detailsColor, glassColor}) => {
     });*/
 
     return (
-        <primitive object={scene} ref={carRef} position-y={-1}/>
+        <primitive object={scene} ref={carRef} />
     );
 };
 
